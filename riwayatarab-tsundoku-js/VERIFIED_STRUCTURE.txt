@@ -1,0 +1,6 @@
+Verified against Riwayatarab pages on 11 Sep 2026:
+- /search exists.
+- /novel/{slug} exposes title, status, author, summary and first chapter links.
+- /novel/{slug}/chapters exposes pagination (example: page 1 of 35).
+- /novel/{slug}/chapter/{number} exposes chapter text and previous/next links.
+The search query endpoint is not exposed in the static /search page, so the plugin tries q, query and search parameters defensively.
